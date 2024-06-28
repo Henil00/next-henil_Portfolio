@@ -10,7 +10,7 @@ const Mainsection = () => {
         <h1 className="text-4xl lg:text-7xl font-bold">
           {"Hi, I'm Henil 👋"}
           <br />{" "}
-          <span className="underline underline-offset-8 decoration-purple-500">
+          <span className="underline underline-offset-8 decoration-teal-500">
             I build things for the Web.
           </span>
         </h1>
@@ -28,12 +28,12 @@ const Mainsection = () => {
       <div className="relative">
         <div className="w-72 h-72 space-y-3 -rotate-[30deg] relative">
           <div className="flex gap-3 translate-x-8">
-            <div className="w-32 h-32 rounded-2xl bg-purple-500 "></div>
-            <div className="w-32 h-32 rounded-full bg-orange-500"></div>
+            <div className="w-32 h-32 rounded-2xl bg-teal-500 "></div>
+            <div className="w-32 h-32 rounded-full bg-amber-500"></div>
           </div>
           <div className="flex gap-3 -translate-x-8">
-            <div className="w-32 h-32 rounded-2xl bg-orange-500"></div>
-            <div className="w-32 h-32 rounded-full bg-purple-500"></div>
+            <div className="w-32 h-32 rounded-2xl bg-amber-500"></div>
+            <div className="w-32 h-32 rounded-full bg-teal-500"></div>
           </div>
           <div className="glow absolute top-[40%] right-1/2 -z-10"></div>
         </div>

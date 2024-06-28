@@ -21,7 +21,7 @@ useEffect(()=>{
 }) 
 
   return (
-   <div className="relative w-16 h-8 flex items-center dark:bg-purple-500 bg-purple-500 cursor-pointer rounded-full p-1" onClick={()=>setdarkmode(!darkmode)}>
+   <div className="relative w-16 h-8 flex items-center dark:bg-teal-500 bg-teal-500 cursor-pointer rounded-full p-1" onClick={()=>setdarkmode(!darkmode)}>
     <FaMoon className='text-black size={18}' />
     <div className="absolute bg-black dark:bg-white w-6 h-6 rounded-full shadow-md transform transition-transform duration-300"
     style={darkmode ? {left:"4px"} : {right:"4px"}}></div>

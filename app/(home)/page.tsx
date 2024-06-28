@@ -8,7 +8,7 @@ import Themetoggle from '@/components/ui/themetoggle'
 
 const page = () => {
   return (
-    <div className='min-h-screen bg-white dark:bg-black  overflow-hidden'>
+    <div className='min-h-screen bg-white dark:bg-black  overflow-hidden ' >
       <div className='dark:bg-black bg-white  dark:bg-grid-white/[0.05] bg-grid-black/[0.2] relative p-5'>
         <Themetoggle />
       <div className="max-w-screen mx-auto  ">

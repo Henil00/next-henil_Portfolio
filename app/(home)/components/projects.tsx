@@ -1,26 +1,28 @@
 import React from 'react'
-import { SiReact,SiTypescript,SiVisualstudio,SiChatbot} from "react-icons/si";
+import { SiReact,SiTypescript,SiVisualstudio,SiTailwindcss,SiNextdotjs } from "react-icons/si";
 import Title from './title';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { DirectionAwareHover } from '@/components/ui/direction-aware-hover';
+import { SiSocketdotio } from "react-icons/si";
+
 
 
 const Project = () => {
     const projects = [
         {
-            title:"Todo List",
-            tech:[SiReact,SiTypescript,SiVisualstudio],
-            Link:"https://github.com/Henil00",
-            cover:"/git-activity.png",
-            background:"bg-purple-500"
+            title:"React-Socket-chat-app",
+            tech:[SiReact,SiSocketdotio,SiTailwindcss],
+            Link:"https://github.com/Henil00/react-socket-chat-app.git",
+            cover:"/chat-app-image.png",
+            background:"bg-teal-500"
         },
         {
-            title:"Chat Web Application",
-            tech:[SiChatbot,SiTypescript,SiVisualstudio],
+            title:"E-com Store(Upcoming)",
+            tech:[SiNextdotjs ,SiTypescript,SiVisualstudio],
             Link:"https://github.com/Henil00",
             cover:"/git-profile.png",
-            background:"bg-orange-500"
+            background:"bg-amber-500"
         },
     ]
   return (
