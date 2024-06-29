@@ -1,9 +1,23 @@
+"use client";
 import Movingborderbtn  from "@/components/ui/moving-border";
 import Link from "next/link";
 import React from "react";
 import Title from "./title";
 
+const pdf_url = "/Henil-Resume.pdf"
+
 const Mainsection = () => {
+  
+
+    const downloadFile = (url: string) => {
+        const fileName = url.split("/").pop();
+        const aTag = document.createElement("a");
+        aTag.href=url;
+        aTag.setAttribute("download",fileName!);
+        document.body.appendChild(aTag);
+        aTag.click();
+        aTag.remove();
+    };
   return (
     <div className="min-h-[60vh] flex flex-col-reverse gap-14 lg:gap-0 lg:flex-row items-center justify-between animate-move-up">
       <div className="space-y-10 text-center lg:text-left">
@@ -37,9 +51,9 @@ const Mainsection = () => {
           </div>
           <div className="glow absolute top-[40%] right-1/2 -z-10"></div>
         </div>
-        <div className="absolute bottom-5 sm:bottom-14 left-0 sm:-left-10">
+        <div className="absolute bottom-5 sm:bottom-14 left-0 sm:-left-10" onClick={()=>{downloadFile(pdf_url)}}>
           <Movingborderbtn borderRadius="0.5rem" className="p-3 font-semibold">
-          <p>Avaliable for work 💻</p>
+          <p> Resume 💻</p>
         </Movingborderbtn>
         </div>
         
